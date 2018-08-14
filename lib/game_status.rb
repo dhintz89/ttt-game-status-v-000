@@ -60,6 +60,8 @@ def over?(board)
 end
 
 def winner(board)
+  winner_index = won?(board)
+  if(board.winner_index)
   if(won?(board).include? "X")
     return "X"
   elsif(won?(board).include? "O")
