@@ -60,7 +60,7 @@ def over?(board)
 end
 
 def winner(board)
-  if(won?(board) == ["X","X","X"])
+  if(won?(board).all?  == ["X","X","X"])
     return "X"
   elsif(won?(board) == ["O","O","O"])
     return "O"
