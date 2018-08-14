@@ -58,3 +58,9 @@ def over?(board)
     return TRUE
   end
 end
+
+def winner(board)
+  won?(board).all? do |space|
+    space == "X"
+  end
+  
