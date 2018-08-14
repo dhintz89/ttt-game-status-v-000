@@ -60,7 +60,5 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).all? do |space|
-    space == "X"
-  end
+  
   
