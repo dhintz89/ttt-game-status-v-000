@@ -39,3 +39,22 @@ def full?(board)
   board.all? do |space|
     space = "X" || space = "O"
   end
+end
+
+def draw?(board)
+  if(full?(board))
+    if(won?(board) = false)
+      return TRUE
+    else
+      return false
+    end
+  else
+    return false
+  end
+end
+    
+def over?(board)
+  if(won?(board) || draw?(board) || full?(board))
+    return TRUE
+  end
+end
